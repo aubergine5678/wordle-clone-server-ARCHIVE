@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  wordle-clone-server:
+    build: ./wordle-clone-server
+    ports:
+      - "8080:8080"
+    environment:
+      - WORDLE_CLONE_SERVER_VERSION=3
+      - WORDLE_CLONE_SERVER_PORT=8080
+      - WORDLE_CLONE_SERVER_HOST=
